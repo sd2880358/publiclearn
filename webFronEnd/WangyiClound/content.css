@@ -1,0 +1,48 @@
+.content{
+    width: 1205px;
+    height: 800px;
+    background: red;
+    }
+.content-line1{height:51px;
+    background: white;
+margin: 0 auto;}
+.content-guide-all{
+    display: inline-block;
+    background: #00bd00;
+    color: white;
+    width:224px;
+    line-height: 51px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Lantinghei SC"
+}
+.content-guide-line1{
+    height:auto;
+    padding:0 12px;
+    display: inline-block;
+    color: black;
+    margin-left: 35px;
+    line-height: 51px;
+    font-family: "Lantinghei SC";
+}
+.content-guide-line1:hover{
+    background: #00bd00;}
+.content-guide-line1:hover a{color:white}
+.subject-system{
+    width: 130px;
+    height: 45px;
+    margin: 0 15px; border-bottom:1px solid #AAAAAA;
+    text-align: center;
+    color: black;
+}
+.top-front-menu{
+    width: 160px;
+    height: 183px;
+    border: 1px solid #ccc;
+    position:absolute; top:173px;left:335px;
+    visibility: hidden;
+    background: white;
+    }
+.content-guide-line1:hover .top-front-menu{visibility: visible;}
+
+.special:hover a{color:black}

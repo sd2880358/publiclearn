@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Element</title>
+    <style>
+        .box1{
+            /*块级元素的大小为父级元素的100%*/
+            height:100px; background:green; }
+        /*span{*/
+            /*!*内链元素不支持宽度和高度属性*/
+            /*不独占一行*/
+            /*代码换行时,会产生间距*!*/
+            /*background: green;*/
+            /*!*只支持左右margin左右值*!*/
+            /*!*支持padding值*!*/
+            /*!*内链元素只支持部分样式*!*/
+            /*padding:20px;*/
+            /*margin:20px;*/
+        /*}*/
+        input {width:200px; height:200px;}
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <!--<br>-->
+    <!--<br>-->
+    <!--<span>111</span>-->
+    <!--行内块元素
+        不独占一行,盒子并在一行,
+        支持所有的样式-->
+    <input type="text">
+
+</body>
+</html>

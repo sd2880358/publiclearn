@@ -1,0 +1,28 @@
+.top{
+    width: 1205px;
+    height: 30px;
+    background: #CCC;
+    border-bottom: 1px solid #aaaaaa;
+    margin: 0 auto;
+    font-size: 14px;
+}
+*{padding:0;margin: 0;}
+
+.slogan{display:inline-block; float:left;height:30px;
+    color: #484848;font-family: "Lantinghei SC";line-height: 30px;
+text-align: center;}
+.top-info{display: inline-block; float:right;
+    margin-left: 35px;
+    font-family: "Lantinghei SC"; line-height: 30px;height:30px;}
+a{text-decoration: none; color: #484848;
+}
+.top-info:hover a{color:green}
+
+.top-front{height:90px;width: 1205px;
+    background: white;margin: 0 auto;
+    border-bottom: 1px solid #aaaaaa;
+}
+.top-front-logo{display:inline-block;line-height: 90px; font-size: 50px; font-family: "Lantinghei SC"}
+.top-front-info{display:inline-block; line-height:90px; font-family: "Lantinghei SC";
+    float:right; margin-left:35px;font-size: 14px;}
+.top-front-info:hover a{color:green;}

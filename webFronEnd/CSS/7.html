@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Font</title>
+    <style>
+        .fonts{
+            color:red;
+            /*google浏览器当中字体默认大小为16px,
+             google字体最小为12px,当设置小于12px时,也是以12px来显示*/
+            font-size:12px;
+            /*设置字体如果用于系统不存在,会以默认字体显示*/
+            font-family: "微软硬黑";
+            font-style: italic;
+            line-height: 14px;
+        }
+        .item2{
+            width: 500px;
+            height: 200px;
+            background-color: red;
+            /*利用line-height设置文本的垂直居中
+            注意:在设置单行文本垂直居中的时候,值给父级元素的高度*/
+            /*font-size:30px;*/
+            line-height:200px;
+        }
+        a{
+            /*去除超链接的下划线*/
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="fonts">
+        <p>
+        color 设置文职的颜色, 如:color:red;
+        font-size 设置文字的大小, 如:font-size:12px;
+        font-family 设置文字的字体,如 font-family:"微软硬黑";
+        font-style: 设置字体是否倾斜, 如:font-style:normal; 设置不斜体. font-style:italic 设置斜体
+        font- weight 设置字体是否加粗, 如: font-weight:bold; 设置加粗.
+        line-height 设置文字的行高, 如:line-height:1px;
+        text-decoration 设置文字的下划线, 如text-decoration:underline;
+        text-indent 设置文字首行缩进, 如:text-indent:24px; 设置文字首行缩进24个像素
+        text-align, 设置文字的对齐方式, 如text-align:center; 设置居中
+        </p>
+    </div>
+    <div class="item2">
+        <!--line-height 设置文字的行高, 如:line-height:1px;-->
+        <a href="http://www.baidu.com"> Baidu </a>
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Usage</title>
+    <!--1.外链式, 听过link标签引入css文件 要在head标签当中引入-->
+    <!--<link rel="stylesheet" href="./1.css">-->
+    <!--<style>-->
+        <!--div{-->
+            <!--width:200px;-->
+            <!--height:200px;-->
+            <!--background-color:orange;-->
+        <!--}-->
+    <!--</style>-->
+</head>
+<body>
+<!--2.嵌入式,通过style标签来写css 也要写在head标签当中-->
+<!--优先级 代码从上外下加载,因此3>2>1-->
+    <div style="width:200px;height:200px;background-color: aqua;">
+    <!--3.内链式 同style属性来设置css样式-->
+    </div>
+
+</body>
+</html>

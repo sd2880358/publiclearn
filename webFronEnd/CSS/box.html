@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BOX</title>
+    <style>
+        .box1{
+            /*由此看出盒子的实际大小是:
+                    盒子的宽度:内容大小+左右边框+padding
+                    盒子的宽度= 内容宽度+上下边框+padding*/
+            width:100px;
+            height:100px;
+            background: pink;
+            border:10px solid red;
+            padding:50px;
+            text-align: center;
+            line-height:100px;
+        }
+
+        /*解决padding和边框改变盒子实际大小的方法*/
+        .box2{width:100px;height:100px;padding:20px;background:green;box-sizing: border-box}
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        box1
+
+    </div>
+    <div class="box2"></div>
+
+</body>
+</html>

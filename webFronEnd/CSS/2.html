@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3 CSS method</title>
+    <style>
+        /*选择器的范围越大,优先度越小*/
+        /* 标签选择器 通过标签来设置元素的样式, 影响范围大*/
+        /*div{*/
+            /*width: 100px;*/
+            /*height: 100px;*/
+            /*background-color: green;*/
+        /*}*/
+        /*.类选择器 通过class类名来设置元素的样式, 影响范围可控制,相对较小*/
+        .item1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+        .item2{
+            width:100px;
+            height:100px;
+            border:5px solid blue
+        }
+        .bg{
+            background-color: pink;
+        }
+        /* #id不能选择器, 通过id属性来设置元素的样式 */
+        /* id在html具有唯一性, 不能重名, 因此影响范围最小*/
+        #box1{
+            width: 300px;
+            height: 300px;
+            /*设置边框, 边框宽度, 边框样式,边框颜色*/
+            border:1px solid red;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="item1"></div><br>
+    <div class="item2 bg"></div>
+    <div class="item1"></div>
+    <div id="box1"></div>
+</body>
+</html>

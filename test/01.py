@@ -8,3 +8,4 @@ if __name__ == '__main__':
     name = input ('please input your name:  ')
     print(SayHello(name = name ))
     print('*'*20)
+

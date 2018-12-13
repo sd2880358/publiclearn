@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+    <style>
+        
+        /*div{*/
+            /*width:200px;*/
+            /*height:200px;*/
+            /*background: red;*/
+            
+        /*}*/
+        .box1{
+            background: red;
+            /*浮动
+            左浮动:float:left
+            右浮动:float:right*/
+            /*浮动会让元素脱离文档流,后面不浮动的元素会占据元素的位置*/
+            float:left;
+            /*停止浮动:
+                a.碰到父级元素的边界会停止
+                b.碰到前面有浮动的元素
+                c.浮动会把元素转换成行内块元素(让元素并到一行)
+                d.碰到未浮动元素会停止*/
+            /*当父级元素没有设置固定高度,子元素都为浮动时,父元素的高度为0
+            解决方案: 给父级元素添加overflow:hiden*/
+            /*float:right;*/
+            /*当父级元素不够时,浮动元素会执行换行显示*/
+        }
+        .box3{
+            width: 220px;
+            background:yellow;}
+        .box2{
+            width: 200px;
+            height: 220px;
+            background: green;
+            float:right;}
+            /*float:right;}*/
+        .box4{
+            width: 200px;
+            background: blue;
+            float:left;
+        }
+        .wrap{
+            width: 500px;
+            /*height: 500px;*/
+        border:5px solid green;
+        overflow: hidden}
+        .item1{
+            width: 200px;
+            height: 200px;
+            background: #00f;
+        float:right}
+        .item2{
+            width: 200px;
+            height: 200px;
+            background: #f00;
+            float:right;
+        }
+        .item3{
+            width: 200px;
+            height: 200px;
+            background: blue;
+            float:right
+        }
+        .item4{
+            width: 200px;
+            height: 200px;
+            background: silver;
+            float:right
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!--<div class="box1">box1</div>-->
+    <!--<div class="box2">box2</div>-->
+    <!--<div class="box3">box3</div>-->
+    <!--<div class="box4">box4</div>-->
+    <div class="wrap">
+        <div class="item1"></div>
+        <div class="item2"></div>
+        <div class="item3"></div>
+        <div class="item4"></div>
+    </div>
+</body>
+</html>

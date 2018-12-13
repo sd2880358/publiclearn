@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+        /* 设置鼠标悬停在元素上时的状态*/
+
+        .box1:hover{color:red}
+        a:hover{color: #a4ff20; text-decoration:underline;}
+        /* before 在元素里面的头部插入内容*/
+        a:before{content:"hello";}
+        /* after 在元素里面的尾部插入内容*/
+        a:after{content:"world";}
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <a> </a>
+    </div>
+
+</body>
+</html>
