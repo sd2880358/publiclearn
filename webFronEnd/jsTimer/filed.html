@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    /*
+    全局变量:在函数外部使用定义的变量是全局变量;
+    局部变量:在函数内部声明的变量是局部变量;
+
+     */
+    var a=1;
+    function demo(){
+        // 在函数中赋值按顺序进行赋值如下所示将输出a=6
+        // var a=1
+        // a=6
+        //如果顺序相反,全局变量则会失效
+        a=6;
+        var a=1;
+        console.log(a);
+        b=2
+    }
+    demo();
+    console.log(b);
+</script>
+
+</body>
+</html>

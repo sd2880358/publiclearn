@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetElement</title>
+</head>
+<body>
+    <script>
+        //获取元素对象
+        //window是js中最大的对象,代表窗口
+        //下面函数表示当页面加载完成之后
+        //JS操作元素的样式,可以通过style属性来给元素设置样式
+        window.onload=function () {
+            var oDiv=document.getElementById('item1');
+            console.log(oDiv);
+            oDiv.style.width="200px";//设置宽度
+            oDiv.style.height="200px";
+            oDiv.style.background="red";
+            //通过js获取元素的样式, 只能获取行间样式
+            console.log(oDiv.style.width);
+            // js操作元素的文本内容 innerHTML的方法
+            // 注意,会覆盖原来的内容
+            oDiv.innerHTML="<h1>444</h1>";
+            //innerText不能解析标签
+            // oDiv.innerText="<h1>111</h1>"
+            //innerHTML获取元素中的内容,会连同标签一起获取
+            console.log(oDiv.innerText)
+
+            //表单值的操作
+                //获取表单的值
+            vl=document.getElementById('uname');
+            console.log(vl);
+            console.log(vl.value);
+            // 设置表单的值
+            vl.value="777";
+        }
+
+
+
+    </script>
+    <div id="item1" style=""></div>
+    <input type="text" value="123" name="username" id="uname">
+</body>
+</html>

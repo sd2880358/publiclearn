@@ -5,7 +5,7 @@
     }
 .content-line1{height:51px;
     background: white;
-margin: 0 auto;}
+    margin: 0 auto;}
 .content-guide-all{
     display: inline-block;
     background: #00bd00;
@@ -40,9 +40,9 @@ margin: 0 auto;}
     height: 183px;
     border: 1px solid #ccc;
     position:absolute; top:173px;left:335px;
-    visibility: hidden;
-    background: white;
+    display: none;
+    background: #272727;
     }
-.content-guide-line1:hover .top-front-menu{visibility: visible;}
 
-.special:hover a{color:black}
+.content-guide-line1:hover .top-front-menu{display: block;}
+.subject-system a{color:black;}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../JQuery1.8.3min.js"></script>
+    <style>
+        #item1{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<script>
+    // 页面加载结束之后触发ready函数
+    // var test = $(document).ready($('#item1'));
+    // test.click(function(){
+    //     alert('事件绑定加载成功')
+    // });
+    //方法二 当页面加载结束后调用函数
+    $(function(){
+        $('#item1').click(function(){
+            alert('函数成功调用')
+        })
+
+    })
+</script>
+<div id="item1"></div>
+
+</body>
+</html>

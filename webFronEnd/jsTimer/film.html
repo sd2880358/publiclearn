@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>film</title>
+    <style>
+        #item{
+            width: 200px;
+            height: 200px;
+            background:#fff;
+        }
+    </style>
+</head>
+<body>
+<div id="item"></div>
+<script>
+    var idiv=document.getElementById("item");
+    var i = 0;
+    var r = Math.random(0x0,0xff);
+    var g = 0x0;
+    var b = 0x0;
+    var set=setInterval(function(){
+        idiv.style.width=i+"px";
+        idiv.style.height=i+"px";
+        idiv.style.background="#"+r+g+b;
+        i += 1;
+        if(r<0xff){r++};
+        if(r==0xff||g<0xff){g++};
+        if(r==0xff||g==0xff){b++};
+
+        if (i>800){
+            clearInterval(set)
+        };
+
+    },16)
+</script>
+
+</body>
+</html>

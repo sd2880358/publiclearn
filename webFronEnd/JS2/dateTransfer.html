@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transfer</title>
+</head>
+<body>
+    <script>
+        // 数值类型转换 Number() parseInt和parseFloat
+        /* 当字符串当中包含任一个非数字表示的字符时,
+            Number返回NaN
+            parseInt和parseFloat结果会返回字符串部分
+            如: 1a23 返回1. 如果为a123,则返回NaN*/
+
+        var num="a1a23";
+        var res=parseInt(num)
+        console.log(res,typeof(res));
+    </script>
+
+</body>
+</html>

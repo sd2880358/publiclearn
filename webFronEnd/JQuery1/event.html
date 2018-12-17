@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event</title>
+    <script src="../JQuery1.8.3min.js"></script>
+    <style>
+        .item{
+            height: 200px;
+            width: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div class="item"></div>
+<script>
+    //基本的绑定
+    // 元素对象.onclick=function(){} 原生JS方法;
+    // $('.item').click(function(){
+    //     $('.item').css('background','green');
+    // })
+    //方法绑定 bind,on
+    // $('.item').bind('click',function(){
+    //     alert('单击事件又被触发了')
+    // });
+    //解除事件绑定
+    $('.item').bind('click',function(){
+        alert('on方法绑定')
+    });
+    //双击事件
+    $('.item').dblclick(function(){
+        alert('这是一个双击事件')
+    })
+    // 解除指定事件
+    $('.item').unbind('click');
+
+</script>
+</body>
+</html>

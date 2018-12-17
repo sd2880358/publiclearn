@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>list</title>
+</head>
+<body>
+<script>
+    //定义一个数组;
+    var list1 = [1,2,3];
+    //改变数组的值,如果下标值不存在,则直接添加;中间值为empty
+    // list1[10]=2;
+    console.log(list1);
+    //给数组的最后添加个一个元素
+    list1.push(0,5);
+    console.log(list1);
+    //从数组最后删除元素
+    list1.pop();
+    console.log(list1);
+    //从数组前面增加元素,删除用shift
+    list1.unshift(100,0);
+    console.log(list1);
+    /*splice(),如果只有一个参数,从指定个元素之后开始执行删除,初始位置为1;
+    如果传入两个参数,则从指定个元素之后删除几个元素;
+    第三个及后面的参数是用来替换删除后的元素*/
+    var list2 = [6,7,8,9,0];
+    list2.splice(0,1,7);
+    console.log(list2);
+
+ </script>
+
+</body>
+</html>

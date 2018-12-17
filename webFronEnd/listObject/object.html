@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>object</title>
+</head>
+<body>
+<script>
+    //通过系统内置的object定义
+    // var myObject = new Object();
+    // myObject.name = 'lilei';
+    // myObject.say = function(){console.log('调用成功')}
+    // console.log(myObject.name)
+    // myObject.say();
+    // a = myObject;
+    // a.name = 'lee';
+    // console.log(a.name);
+    // 利用var 直接定义
+    // var student={name:'lee',gender:'male',age:18};
+    // 添加成员树精
+    // student.length = 18;
+    // console.log(student.length)
+    // 3. 使用构造函数来自定义对象
+    function student(name,gender){
+        //this代表当前对象
+        this.name = name;
+        this.gender = gender;
+        this.say = function(){
+            console.log(this);
+        }
+    }
+    var lee = new student()
+    lee.name = 'lee';
+    lee.gender = 'male';
+    for (i in Emily){
+        console.log(i,Emily[i]);
+    }
+    // lee.say();
+    // for (var i in lee){
+    //     console.log(i)
+    // }
+    console.log(lee.constructor);
+
+
+
+</script>
+
+</body>
+</html>

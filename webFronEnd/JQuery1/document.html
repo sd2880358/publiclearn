@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../JQuery1.8.3min.js"></script>
+    <style>
+        * {
+            margin: 0;
+        padding: 0}
+        .item1{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .in{
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: relative;
+            top:20px;
+            left:20px;
+        }
+    </style>
+</head>
+<body style="width: 2000px;height: 2000px;">
+<div class="item1">
+    <div class="in"></div>
+</div>
+<script>
+    //获取元素相对于文档的偏移位置,返回一个对象,有left和top属性
+    var of = $('.item1').offset();
+    console.log(of);
+    //获取当前元素相对父级元素定位的位置,必须有position属性
+    var inn = $('.in').position();
+    console.log(inn);
+    //获取当前文档相对于滚动条的距离,top left;
+    var l = $(document).scrollTop();
+    console.log(l)
+    //获取元素的宽度和高度;
+    var w = $('.in').width();
+    console.log(w);
+    // 设置元素的宽度和高度
+    $('.in').width(100);
+    //可视区域的宽度和高度
+    var ww = $(window).width();
+    console.log(ww);
+    // 获取文档的宽度和高度;
+    var W = $(document).width();
+    console.log(W);
+
+</script>
+
+
+</body>
+</html>

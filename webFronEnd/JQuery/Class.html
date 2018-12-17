@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../JQuery1.8.3min.js"></script>
+    <style>
+        .item1{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+        .item2{
+            border:1px solid green;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<script>
+    //通过JQuery给元素添加class属性
+    $('div').addClass('item1 item2');
+    //通过JQuery给元素删除class属性 注意:如果不指定要删除的类名,那么久删除所有的类名;
+    $('div').removeClass('item2');
+
+</script>
+
+
+</body>
+</html>

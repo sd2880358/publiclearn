@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>父子关系选择器</title>
+    <script src="../JQuery1.8.3min.js"></script>
+</head>
+<body>
+<div class="wrap">
+    <div class="in">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3"></div>
+    </div>
+</div>
+<script>
+    //$('父元素').children()获取指定元素里的所有子元素,返回一个数组
+    console.log($('.wrap').children());
+    //获取第一个子元素
+    console.log($('.wrap div:first-child'));
+    //获取指定的子元素,通过元素个数,起始位置为1;
+    console.log($('.wrap div:nth-child(1)'))
+    // 获取同级元素,prev上一个,next下一个,siblings获取所有同级元素,不包含自己;
+    console.log($('.item2').siblings());
+    // 获取父级元素parent
+    console.log($('.item2').parent());
+    // 通过制定元素获取先辈级;
+    console.log($('.item2').parents('.wrap'));
+    // 查找当前元素下的指定子元素,如果不指定,指令不生效;
+    console.log($('.wrap').find('.item1'));
+
+</script>
+
+</body>
+</html>
