@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <script src="./jquery-1.8.3.min.js"></script>
+</head>
+<body>
+<button>$.get</button>
+<script>
+    // $.get()发送请求
+    $('button').click(function(){
+       //当触发单击事件时,向后台请求或发送数据
+        //第一个参数:请求地址;
+        //第二个参数: 要发送的数据(可选);
+        //第三个参数:请求成功后返回的函数;
+        //第四个参数:指定返回数据的类型;
+        //date形参,用来接收后端返回的数据;
+       $.get('#./cgi-bin/1.py',{username:'zhangsan',age:18},function(date){
+           console.log(date);
+        },'json')
+    });
+</script>
+
+</body>
+</html>

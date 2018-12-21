@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Control</title>
+    <script src="../JQuery1.8.3min.js"></script>
+    <style>
+        .item1{
+            width:100px;
+            height:100px;
+            background:red;
+            border-radius: 50%;
+            float:left;
+        }
+        .wrap{
+            width: 800px;
+            height: 800px;border:2px solid blue;
+        }
+        .in{
+            width: 400px;
+            height: 400px;
+            border:2px solid green;
+            margin: 50px;
+        }
+    </style>
+</head>
+<body>
+<!--append 在元素后面插入-->
+<!--appendTo将元素插入()-->
+<button>append</button>
+<!--在元素的前面插入新的元素-->
+<button>prepend</button>
+<button>1</button>
+<button>删除节点</button>
+<button>清空</button>
+<button>克隆</button>
+<button>注意</button>
+<div class="wrap">
+    <div class="in"></div>
+</div>
+<script>
+    //节点操作注意事项
+    $('button').eq(6).click(function(){
+        //将按钮1添加到wrap中
+        //在插入元素的时候,要先进行克隆,再进行插入操作
+        // 否则会把原来的元素拿走
+        $('.wrap').prepend($('button').eq(0).clone(true));
+    });
+    $('button').eq(4).click(function(){
+        $('.wrap').empty();//只是清空指定元素内部的元素节点
+    });
+    function div(){
+        odiv = $('<div class="item1"> 新增div </div>');
+        c1 = Math.floor(Math.random()*(255-1)+0);
+        c2 = Math.floor(Math.random()*(255-1)+0);
+        c3 = Math.floor(Math.random()*(255-1)+0);
+        odiv.css('background','rgb('+c1+','+c2+','+c3+')');
+
+    };
+    //删除节点
+    $('button').eq(3).click(function(){
+        console.log('1')
+        //可以删除自己
+        $('.item1').remove();
+    })
+
+    $('button').eq(2).click(function(){
+        div();
+        $('.in').after(odiv);
+    })
+
+    $('button').eq(1).click(function(){
+        div();
+       $('.in').prepend(odiv);
+    });
+    function randint(n,m){
+        return Math.floor(Math.random()*(m-n+1)+n);
+    }
+    //克隆元素
+    $('button').eq(5).click(function(){
+        //克隆元素,加入参数true则克隆结果携带原生效果
+        var newBt = $('button').eq(randint(0,5)).clone(true);
+        // 将克隆元素插入到wrap外部的前面
+
+        $('.wrap').before(newBt);
+
+    })
+</script>
+
+</body>
+</html>

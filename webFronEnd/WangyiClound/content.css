@@ -41,8 +41,8 @@
     border: 1px solid #ccc;
     position:absolute; top:173px;left:335px;
     display: none;
-    background: #272727;
+    background: #ccc;
     }
 
 .content-guide-line1:hover .top-front-menu{display: block;}
-.subject-system a{color:black;}
+.subject-system:hover a{color:green;}

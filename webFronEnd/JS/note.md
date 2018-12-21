@@ -30,7 +30,7 @@ JavaScript是运行在浏览器端的脚本语言,JavaScript主要解决的是�
 ## JavaScript嵌入页面的方式
 1. 页面script标签嵌入
 ```
-<script tyoe="text/javascript>
+<script type="text/javascript>
 
     var a="你好"
     alert(a);

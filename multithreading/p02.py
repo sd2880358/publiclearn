@@ -4,7 +4,7 @@ import time
 def loop1():
     print('start loop1 at: ', time.ctime())
     time.sleep(4)
-    print('End loop 1 at : ', time.ctime())
+    # print('End loop 1 at : ', time.ctime())
 
 def loop2():
     print('start loop2 at: ', time.ctime())

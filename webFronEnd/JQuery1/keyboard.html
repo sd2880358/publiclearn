@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Keyboard</title>
+    <script src="../JQuery1.8.3min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+            position:absolute;
+            left:0;
+            top:0;
+        }
+    </style>
+</head>
+<body style="width: 2000px; height: 2000px;">
+<div></div>
+<script>
+    //键盘触发事件
+    // 定义元素移动的位置
+    var T = 0;
+    var L = 0;
+    $(window).keydown(function(e){
+        //w87 a65 s83 d68
+        if (e.keyCode == 87){
+            T -= 5;
+            $('div').css('top',T+'px');
+
+        }else if(e.keyCode == 65){
+            L -= 5;
+            $('div').css('left',L+'px');
+
+        }else if(e.keyCode == 83){
+            T += 5;
+            $('div').css('top',T+'px');
+
+        }else if(e.keyCode ==68){
+            L += 5;
+            $('div').css('left',L+'px');
+        };
+    })
+</script>
+</body>
+</html>

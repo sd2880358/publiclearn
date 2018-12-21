@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>append</title>
+    <script src="../JQuery1.8.3min.js"></script>
+    <style>
+        .item1{
+            width: 200px;
+            height: 200px;
+            background: red;}
+    </style>
+</head>
+<body>
+<div class="item1">1</div>
+<script>
+    var odiv = $('<div class="item1"> 这是新创建的元素节点</div>')
+    $('body').append(odiv);
+</script>
+
+</body>
+</html>

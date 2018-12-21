@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mouse</title>
+    <script src="../JQuery1.8.3min.js"></script>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<script>
+    // 单击事件click dblclick
+    // 鼠标按下事件 mousedown 鼠标按下时触发
+    $('div').mousedown(function(){
+        console.log('鼠标被按下了')
+    });
+    //鼠标抬起事件 mouseup 鼠标抬起时触发
+    $('div').mouseup(function(){
+        console.log('鼠标抬起了')
+    });
+    // 鼠标移入 mouseover; 鼠标移入触发的事件
+    $('div').mouseover(function(){
+        $('div').css('background','black')
+    });
+    //鼠标移出事件 mouseout
+    $('div').mouseout(function(){
+        $('div').css('background','red');
+
+    });
+    $ ('div').mousemove(function(e){
+        //获取实时的当前位置
+        console.log(e.clientX,e.clientY);
+    })
+</script>
+</body>
+</html>

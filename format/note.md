@@ -109,4 +109,11 @@
 - DOM 
     - 是w3c规定的XML编程接口
     - 一个XML文件再缓存中以树形结构保存,读取
+    - 用途    
+        - 定位浏览xml任何一个节点信息
+        - 添加删除相应内容
+    - minidom
+        - minidom.parse(filename):加载读取的xml文件,file也可以是xml代码
+        - doc.documentElement:获取xml文档对象,一个xml文件只有一个对于的文档
+    - tree
     

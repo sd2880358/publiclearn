@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event Object</title>
+    <script src="../JQuery1.8.3min.js"></script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<script>
+    // event 事件对象,通过此对象可以获得鼠标当前的单击的坐标
+    $('div').click(function(e){
+        console.log('单击事件触发了');
+        console.log(e);
+        //获取单击时相对于窗口的位置;
+        console.log(e.clientX);
+    });
+</script>
+
+</body>
+</html>
